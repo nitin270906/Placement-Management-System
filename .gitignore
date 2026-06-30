@@ -1,0 +1,34 @@
+# Added by code-review-graph
+.code-review-graph/
+
+# Ignore all hidden files/folders by default
+.*
+!.gitignore
+!.github/
+
+# Ignore typical user profile folders
+-1.14-windows.xml
+AppData/
+Cisco Packet Tracer*/
+Contacts/
+Downloads/
+Favorites/
+IdeaProjects/
+Links/
+Microsoft/
+Music/
+NTUSER*
+ntuser*
+Rave.dat
+Saved Games/
+Searches/
+Untitled*.ipynb
+Videos/
+VirtualBox VMs/
+hello world*
+package-lock.json
+python program/
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+QODER.md
