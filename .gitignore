@@ -6,6 +6,12 @@
 !.gitignore
 !.github/
 
+# Ignore everything in OneDrive except the project folder
+OneDrive/*
+!OneDrive/Desktop/
+OneDrive/Desktop/*
+!OneDrive/Desktop/data science project/
+
 # Ignore typical user profile folders
 -1.14-windows.xml
 AppData/
