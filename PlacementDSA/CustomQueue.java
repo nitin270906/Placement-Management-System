@@ -28,13 +28,25 @@ public class CustomQueue {
     }
 
     public void enqueue(Application app) {
+        if (app == null) return;
         if (isFull()) {
-            System.out.println("Queue is full! Cannot add more students.");
-            return;
+            resize();
         }
         rear = (rear + 1) % capacity;
         queue[rear] = app;
         size++;
+    }
+
+    private void resize() {
+        int newCapacity = capacity * 2;
+        Application[] newQueue = new Application[newCapacity];
+        for (int i = 0; i < size; i++) {
+            newQueue[i] = queue[(front + i) % capacity];
+        }
+        queue = newQueue;
+        front = 0;
+        rear = size - 1;
+        capacity = newCapacity;
     }
 
     public Application dequeue() {
