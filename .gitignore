@@ -1,0 +1,21 @@
+# Compiled Java class files
+*.class
+
+# Data files (regenerated on run)
+PlacementDSA/data/
+data/
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build outputs
+out/
+bin/
+build/
